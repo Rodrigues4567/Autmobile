@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'paragrafo';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'titulo';
+    src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'sub-titulo';
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'paragrafo', sans-serif;
+}
+
+.home {
+    background: url(../img/home.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 52rem;
+}
+
+.header {
+    padding: 2.2rem 1.5rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    height: 62px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    font-family: 'sub-titulo', sans-serif;
+    font-size: 1.1rem;
+    list-style: none;
+}
+
+.nav a  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.home-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 43rem;
+}
+
+.home-title-content {
+    text-align: center;
+}
