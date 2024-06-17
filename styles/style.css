@@ -25,10 +25,14 @@ body {
 }
 
 .home {
-    background: url(../img/home.jpeg);
+    background: linear-gradient(#ca1c2dd2, #ca1c2dd2), url(../img/home.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 52rem;
+}
+
+.responsive-menu-button {
+    display: none;
 }
 
 .header {
@@ -48,10 +52,12 @@ body {
 .nav ul {
     display: flex;
     align-items: center;
-    gap: 1.4rem;
+    gap: 1.6rem;
     font-family: 'sub-titulo', sans-serif;
     font-size: 1.1rem;
     list-style: none;
+    background-color: #C00416;
+    padding: 8px 16px;
 }
 
 .nav a  {
@@ -59,13 +65,91 @@ body {
     text-decoration: none;
 }
 
+.nav a:hover {
+    color: #1d1d1d;
+    transition: 0.4s;
+}
+
 .home-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 43rem;
+    height: 42rem;
 }
 
 .home-title-content {
     text-align: center;
+}
+
+.home-title-content h3 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.home-title-content h1 {
+    margin-bottom: 3px;
+    font-family: 'titulo', sans-serif;
+    font-size: 4.1rem;
+    color: #fff;
+}
+
+.home-title-content h2 {
+    font-family: 'titulo', sans-serif;
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+.home-button {
+    padding: 14px 25px;
+    margin-top: 1.3rem;
+    border: 2px solid #fff;
+    color: #fff;
+    z-index: 1;
+    background-color: transparent;
+    position: relative;
+    font-family: 'paragrafo', sans-serif;
+    font-size: 17px;
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+}
+   
+.home-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #C00416;
+    z-index: -1;
+    transition: all 350ms
+}
+   
+.home-button:hover {
+    color: #e8e8e8;
+}
+   
+.home-button:hover::before {
+    width: 100%;
+}
+
+/******************** MEDIA NOTEBOOK ********************/
+
+@media screen and (max-width: 1300px) {
+    
+}
+
+/******************** MEDIA CELULAR ********************/
+
+@media screen and (max-width: 710px) {
+
+    .responsive-menu-button {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
 }
