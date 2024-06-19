@@ -29,6 +29,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 52rem;
+    margin-bottom: 6rem;
 }
 
 .responsive-menu-button {
@@ -134,10 +135,33 @@ body {
     width: 100%;
 }
 
+/*********** SECTION 1 - SERVICES **********/
+
+.services-title {
+    text-align: center;
+}
+
+.services-title1 {
+    padding-bottom: 5px;
+    color: #c00417e8;
+    font-weight: normal;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.services-title2 {
+    font-family: 'titulo', sans-serif;
+    color: #1d1d1d;
+}
+
 /******************** MEDIA NOTEBOOK ********************/
 
 @media screen and (max-width: 1300px) {
     
+    .home-title-content h1 {
+        font-size: 3.5rem;
+    }
+
 }
 
 /******************** MEDIA CELULAR ********************/
@@ -150,6 +174,59 @@ body {
 
     .nav {
         display: none;
+    }
+
+    .responsive-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .responsive-btn i {
+        font-size: 2rem;
+    }
+
+    .header-content {
+        justify-content: space-between;
+        padding: 0px 5px;
+    }
+
+    /* Home-Content */
+
+    .home {
+        background: linear-gradient(#ca1c2dd2, #ca1c2dd2), url(../img/home.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 42rem;
+    }
+
+    .home-title {
+        height: 30rem;
+    }
+
+    .home-title-content {
+        padding: 0px 1rem;
+    }
+
+    .home-title-content h3 {
+        font-size: 1rem;
+        font-weight: normal;
+        margin-bottom: 7px;
+    }
+    
+    .home-title-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 9px;
+    }
+    
+    .home-title-content h2 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    .home-button {
+        padding: 12px 23px;
+        font-size: 16px;
     }
 
 }
