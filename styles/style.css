@@ -25,11 +25,14 @@ body {
 }
 
 .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(#ca1c2dd2, #ca1c2dd2), url(../img/home.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 52rem;
     margin-bottom: 6rem;
+    height: 85vh;
 }
 
 .responsive-menu-button {
@@ -37,7 +40,24 @@ body {
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 2.2rem 1.5rem;
+}
+
+.responsive-menu-list {
+    display: none;
+}
+
+/* classe para mudar o header quando rolar a página */
+.roll {
+    padding: 1rem 1.5rem;
+    box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.192);
+    background-color: #fff;
+    transition: 0.4s;
+    z-index: 999;
 }
 
 .header-content {
@@ -191,17 +211,40 @@ body {
         padding: 0px 5px;
     }
 
+    /* Responsive Menu Open */
+
+    .responsive-menu-list {
+        justify-content: center;
+        align-items: center;
+        background-color: #C00416;
+    }
+
+    .nav-responsive ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    .nav-responsive li {
+        margin: 1.2rem 0px;
+    }
+
+    .nav-responsive a {
+        padding: 8px;
+        font-size: 1.1rem;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .open {
+        display: flex;
+    }
+
     /* Home-Content */
 
     .home {
         background: linear-gradient(#ca1c2dd2, #ca1c2dd2), url(../img/home.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 42rem;
-    }
-
-    .home-title {
-        height: 30rem;
     }
 
     .home-title-content {
