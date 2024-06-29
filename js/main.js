@@ -8,12 +8,13 @@ button.addEventListener('click', menuShow = () => {
 
     if (responsiveList.classList.contains('open')) {
         responsiveList.classList.remove('open')
+        header.classList.remove('menu-change')
+        logoHeader.src = '../img/logo.png'
     }
     else {
         responsiveList.classList.add('open')
-        // header.style.backgroundColor = '#fff'
-        // header.style.transition = '0.4s'
-        // logoHeader.src = '../img/logo2.png'
+        header.classList.add('menu-change')
+        logoHeader.src = '../img/logo2.png'
     }
 })
 
@@ -25,6 +26,7 @@ window.addEventListener('scroll', menuScroll = () => {
     }
     else {
         header.classList.remove('roll')
+        header.classList.remove('menu-change')
         logoHeader.src = '../img/logo.png'
     }
 })
