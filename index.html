@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Autmobile</title>
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -120,54 +121,59 @@
                         <h2 class="products-title2">Nossos Produtos</h2>
                     </div>
 
-                    <div>
-                        <div class="products-cards">
-                            <div class="products-card">
+                    <div class="swiper products-cards-container">
+                        <div class="products-cards swiper-wrapper">
+                            <div class="products-card swiper-slide">
                                 <div class="products-card-img">
                                     <img src="img/product-1.jpg" alt="">
                                 </div>
                                 <h2 class="products-card-title">interiores</h2>
-                                <p class="products-card-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe optio iusto laudantium neque ducimus.</p>
-                                <p class="products-card-price">R$120</p>
+                                <p class="products-card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe optio iusto laudantium neque.</p>
+                                <p class="products-card-price">R$ 120</p>
                                 <button class="products-card-button">Pedir Agora</button>
                             </div>
 
-                            <div class="products-card">
+                            <div class="products-card swiper-slide">
                                 <div class="products-card-img">
                                     <img src="img/product-1.jpg" alt="">
                                 </div>
                                 <h2 class="products-card-title">interiores</h2>
-                                <p class="products-card-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe optio iusto laudantium neque ducimus.</p>
-                                <p class="products-card-price">R$120</p>
+                                <p class="products-card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe optio iusto laudantium neque.</p>
+                                <p class="products-card-price">R$ 120</p>
                                 <button class="products-card-button">Pedir Agora</button>
                             </div>
 
-                            <div class="products-card">
+                            <div class="products-card swiper-slide">
                                 <div class="products-card-img">
                                     <img src="img/product-1.jpg" alt="">
                                 </div>
                                 <h2 class="products-card-title">interiores</h2>
-                                <p class="products-card-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe optio iusto laudantium neque ducimus.</p>
-                                <p class="products-card-price">R$120</p>
+                                <p class="products-card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe optio iusto laudantium neque.</p>
+                                <p class="products-card-price">R$ 120</p>
                                 <button class="products-card-button">Pedir Agora</button>
                             </div>
 
-                            <div class="products-card">
+                            <div class="products-card swiper-slide">
                                 <div class="products-card-img">
                                     <img src="img/product-1.jpg" alt="">
                                 </div>
                                 <h2 class="products-card-title">interiores</h2>
-                                <p class="products-card-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe optio iusto laudantium neque ducimus.</p>
-                                <p class="products-card-price">R$120</p>
+                                <p class="products-card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe optio iusto laudantium neque.</p>
+                                <p class="products-card-price">R$ 120</p>
                                 <button class="products-card-button">Pedir Agora</button>
                             </div>
                         </div>
+
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
+
                     </div>
                 </div>
             </div>
         </section>
     </main>
     
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -30,3 +30,25 @@ window.addEventListener('scroll', menuScroll = () => {
         logoHeader.src = 'img/logo.png'
     }
 })
+
+let swiperCards = new Swiper('.products-cards-container', {
+
+    loop: true,
+    spaceBetween: 42,
+    grabCursor: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+        },
+        970: {
+            slidesPerView: 3,
+        },
+    },
+});
