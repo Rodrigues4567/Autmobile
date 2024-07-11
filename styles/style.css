@@ -162,6 +162,10 @@ body {
 
 /*********** SECTION 1 - SERVICES **********/
 
+.section1 {
+    margin-bottom: 6.5rem;
+}
+
 .services-title {
     text-align: center;
     margin-bottom: 2rem;
@@ -206,6 +210,52 @@ body {
     font-size: 1.5rem;
     margin-bottom: 8px;
     color: #C00416;
+}
+
+/*********** SECTION 2 - PRODUCTS **********/
+
+.section2 {
+    height: 750px;
+    background: linear-gradient(#b91929e5, #b91929e5), url(../img/products-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-title {
+    text-align: center;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.products-title1 {
+    margin-bottom: 2px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.products-title2 {
+    font-size: 1.6rem;
+    font-family: 'titulo', sans-serif;
+    color: #fff;
+}
+
+.products-card {
+    width: 310px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.products-card-img img {
+    width: 100%;;
 }
 
 /******************** MEDIA NOTEBOOK ********************/
