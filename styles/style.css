@@ -22,6 +22,7 @@
 body {
     height: 100vh;
     font-family: 'paragrafo', sans-serif;
+    background-color: #f7f7f7;
 }
 
 .home {
@@ -197,7 +198,8 @@ body {
     text-align: center;
     padding: 2rem 1rem;
     border-radius: 10px;
-    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.164);
+    box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.192);
+    background-color: #fff;
 }
 
 .services-card img {
@@ -219,6 +221,7 @@ body {
     background: linear-gradient(#b91929e5, #b91929e5), url(../img/products-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 6rem;
 }
 
 .products {
@@ -321,6 +324,72 @@ body {
 
 .swiper-pagination-bullet-active {
     background-color: #fff;
+}
+
+/*********** SECTION 3 - PACKAGES **********/
+
+.packages-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.packages-title1 {
+    margin-bottom: 2px;
+    color: #c00417e8;
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.packages-title2 {
+    font-size: 1.6rem;
+    font-family: 'titulo', sans-serif;
+    color: #1d1d1d;
+}
+
+.packages-cards-content {
+    display: grid;
+    grid-template-columns: 530px 530px;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.packages-card {
+    width: 530px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.192);
+}
+
+.packages-card-description {
+    padding: 1.5rem;
+}
+
+.packages-card-description h2 {
+    font-family: 'titulo', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #C00416;
+}
+
+.packages-card-description ul {
+    padding-left: 2.2rem;
+}
+
+.packages-card-price {
+    margin-right: 1rem;
+    padding: 1.5rem;
+    background-color: #C00416;
+    border-radius: 8px;
+}
+
+.packages-card-price p {
+    font-size: 1.8rem;
+    color: #fff;
 }
 
 /******************** MEDIA NOTEBOOK ********************/
