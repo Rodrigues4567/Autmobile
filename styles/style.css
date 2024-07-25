@@ -330,7 +330,7 @@ body {
 
 .packages-title {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .packages-title1 {
@@ -408,8 +408,21 @@ body {
         grid-template-columns: 250px 250px 250px;
     }
 
+    .section2 {
+        height: 800px;
+    }
+
     .products-cards-container {
         width: 85vw;
+    }
+
+    /* Section 3 */
+    .packages-cards-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
     }
 
 }
@@ -523,14 +536,50 @@ body {
         grid-template-columns: 345px;
     }
 
+    /* Section 3 */
+    .packages-card {
+        width: 90vw;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
 
     /* Section 1 */
-
     .services-cards-content {
         grid-template-columns: 90vw;
+    }
+
+    /* Section 3 */
+    .packages-card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .packages-card-description {
+        padding: 0.8rem;
+        margin-bottom: 3px;
+    }
+
+    .packages-card-description h2 {
+        margin-top: 5px;
+    }
+    
+    .packages-card-description ul {
+        padding-left: 2.2rem;
+    }
+    
+    .packages-card-price {
+        width: 100%;
+        text-align: center;
+        margin-right: 0rem;
+        padding: 0.7rem 0px;
+        border-radius: 0px 0px 6px 6px;
+    }
+
+    .packages-card-price p {
+        font-size: 1.7rem;
     }
 
 }
