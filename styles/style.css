@@ -221,7 +221,7 @@ body {
     background: linear-gradient(#b91929e5, #b91929e5), url(../img/products-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 }
 
 .products {
@@ -328,6 +328,10 @@ body {
 
 /*********** SECTION 3 - PACKAGES **********/
 
+.packages {
+    margin-bottom: 5rem;
+}
+
 .packages-title {
     text-align: center;
     margin-bottom: 3rem;
@@ -391,6 +395,10 @@ body {
     font-size: 1.8rem;
     color: #fff;
 }
+
+/*********** SECTION 4 - GALLERY **********/
+
+
 
 /******************** MEDIA NOTEBOOK ********************/
 
