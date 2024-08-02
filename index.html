@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Autmobile</title>
+    <!-- Swiper da Section 4 gallery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper da Section 2 products -->
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -251,13 +254,34 @@
             <div class="gallery">
                 <div class="gallery-content">
                     <div class="gallery-title">
-                        <h2 class="gallery-title1">Reparos automotivos gerais</h2>
-                        <h2 class="gallery-title2">Nossos Pacotes</h2>
+                        <h2 class="gallery-title1">Veja Nossos Serviços</h2>
+                        <h2 class="gallery-title2">Galeria</h2>
                     </div>
 
                     <div class="gallery-photos">
-                        <div class="gallery-photos-content">
-                            
+                        <div class="swiper gallery-photos-content">
+                            <div class="swiper-wrapper photos">
+                                <div class="swiper-slide">
+                                    <img src="img/gallery-1.jpg" alt="fotos dos serviços">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/gallery-2.jpg" alt="fotos dos serviços">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/gallery-5.jpg" alt="fotos dos serviços">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/gallery-6.jpg" alt="fotos dos serviços">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/gallery-8.jpg" alt="fotos dos serviços">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/gallery-9.jpg" alt="fotos dos serviços">
+                                </div>
+                            </div>
+                            <div class="arrow-next swiper-button-next"></div>
+                            <div class="arrow-prev swiper-button-prev"></div>
                         </div>
                     </div>
                 </div>
@@ -265,6 +289,9 @@
         </section>
     </main>
     
+    <!-- Swiper da Section 4 gallery -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper da Section 2 products -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

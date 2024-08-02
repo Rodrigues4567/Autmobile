@@ -52,3 +52,15 @@ let swiperCards = new Swiper('.products-cards-container', {
         },
     },
 });
+
+
+let swiper = new Swiper(".gallery-photos-content", {
+
+    loop: true,
+    grabCursor: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+});
