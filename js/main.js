@@ -36,6 +36,11 @@ let swiperCards = new Swiper('.products-cards-container', {
     loop: true,
     spaceBetween: 42,
     grabCursor: true,
+
+    autoplay: {
+        delay: 3100,
+        disableOnInteraction: true,
+    },
   
     pagination: {
       el: '.swiper-pagination',
@@ -59,8 +64,13 @@ let swiper = new Swiper(".gallery-photos-content", {
     loop: true,
     grabCursor: true,
 
+    autoplay: {
+        delay: 3100,
+        disableOnInteraction: true,
+    },
+
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });
