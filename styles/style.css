@@ -442,7 +442,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 .testimonials-content {
@@ -544,7 +544,11 @@ body {
     width: 100%;
 }
 
-/*********** SECTION 5 - TESTIMONIALS **********/
+/*********** SECTION 6 - CONTACT **********/
+
+.section6 {
+    margin-bottom: 11rem;
+}
 
 .contact-title {
     text-align: center;
@@ -592,10 +596,14 @@ body {
     color: #313131;
 }
 
-.inputs {
+.inputs-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    align-items: baseline;
     flex-direction: column;
     gap: 1rem;
 }
@@ -618,6 +626,47 @@ body {
     font-size: 1.1rem;
     font-family: 'paragrafo', sans-serif;
     resize: none;
+}
+
+.button-form {
+    padding: 10px 20px;
+    margin-top: 2px;
+    border: 2px solid #c00417;
+    color: #c00417;
+    z-index: 1;
+    background-color: transparent;
+    position: relative;
+    font-family: 'paragrafo', sans-serif;
+    font-size: 17px;
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+}
+   
+.button-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #C00416;
+    z-index: -1;
+    transition: all 350ms
+}
+   
+.button-form:hover {
+    color: #e8e8e8;
+}
+   
+.button-form:hover::before {
+    width: 100%;
+}
+
+/*********** FOOTER 1 **********/
+
+.footer1 {
+    background-color: #151414;
 }
 
 /******************** MEDIA NOTEBOOK ********************/
@@ -782,6 +831,48 @@ body {
 
     .testimonials {
         height: 1130px;
+    }
+
+    /* Section 6 */
+    
+    .contact-info-container {
+        display: flex;
+        justify-content: baseline;
+        align-items: baseline;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-left: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .infos {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .inputs-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .inputs {
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .text-email-container {
+        flex-direction: column;
+    }
+    
+    .input {
+        width: 90vw;
+    }
+    
+    .input-textarea {
+        width: 90vw;
     }
 
 }
