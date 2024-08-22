@@ -2,7 +2,7 @@
 
 Site institucional para uma empresa fictícia chamada Autmobile.
 
-Site 100% responsivo.
+Site 100% responsivo e funcional.
 
 ### Tecnologias usadas
 - HTML
