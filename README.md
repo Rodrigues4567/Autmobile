@@ -1,6 +1,6 @@
 # Autmobile
 
-Site institucional para uma empresa fictícia chamada Autmobile.
+O projeto Autmobile é um site institucional desenvolvido para uma oficina automotiva fictícia, com o objetivo de apresentar seus serviços, produtos e informações de contato de forma clara e atrativa.
 
 Site 100% responsivo e funcional.
 
